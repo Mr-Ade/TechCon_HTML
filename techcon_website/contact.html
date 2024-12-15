@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact TechCon 2024</title>
+    <meta name="description" content="Contact information and form for TechCon 2024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <h2>Get in Touch</h2>
+            <div class="contact-details">
+                <h3>Contact Information</h3>
+                <p>
+                    Have questions about TechCon 2024? We're here to help!
+                </p>
+                <ul>
+                    <li>
+                        <strong>Email:</strong> 
+                        <a href="mailto:info@techcon2024.com">info@techcon2024.com</a>
+                    </li>
+                    <li>
+                        <strong>Phone:</strong> +1 (555) 123-4567
+                    </li>
+                    <li>
+                        <strong>Address:</strong> TechCon Convention Center<br>
+                        123 Innovation Drive<br>
+                        San Francisco, CA 94105
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li>
+                        <a href="https://facebook.com/techcon" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Visit our Facebook page">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/techcon" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Follow us on Twitter">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/company/techcon" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Connect with us on LinkedIn">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit-contact" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" 
+                           id="name" 
+                           name="name" 
+                           required 
+                           aria-label="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           required 
+                           aria-label="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="registration">Registration Inquiry</option>
+                        <option value="sponsorship">Sponsorship Opportunity</option>
+                        <option value="speaking">Speaking Opportunity</option>
+                        <option value="general">General Question</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" 
+                              name="message" 
+                              rows="5" 
+                              required 
+                              aria-label="Enter your message"></textarea>
+                </div>
+
+                <button type="submit" aria-label="Send message">
+                    Send Message
+                </button>
+            </form>
+        </section>
+
+        <section id="venue-location">
+            <h2>Conference Venue Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=placeholder-url"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="TechCon 2024 Venue Location">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2024 TechCon Conference. All rights reserved.
+        </p>
+        <div class="contact-info">
+            <p>Email: info@techcon2024.com</p>
+            <p>Phone: +234 (080) 123-4567</p>
+        </div>
+        <div class="social-media">
+            <a href="#" aria-label="TechCon Facebook">Facebook</a>
+            <a href="#" aria-label="TechCon Twitter">Twitter</a>
+            <a href="#" aria-label="TechCon LinkedIn">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
